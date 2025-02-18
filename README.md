@@ -1,2 +1,2 @@
 # Category-Reading-Club
-Note an materials for category reading club
+Notes and materials for category reading club
