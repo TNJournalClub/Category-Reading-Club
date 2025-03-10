@@ -53,6 +53,10 @@ The set is called the *underlying set* of the group, and the binary operation is
 Group homomorphism are functions that respect group structure: a map $f: (G, dot) arrow (H, *)$ between two groups is a homomorphism if $f(a dot b) = f(a) * f(b)$ for all $a, b in G$.
 An isomorphism is a homomorphism that has an inverse homomorphism; equivalently, it is a bijective homomorphism.
 
+$G$-sets: a $G$-set is a set $S$ equipped with an action of a group $G$. 
+$S$ is called a left $G$-set if there exists a map $phi: G times S arrow S$ that satisfies $phi(g, phi(h, s)) = phi(g dot h, s)$ and $phi(e, s) = s$ for all $g, h in G$ and $s in S$, then $phi$ is called a left action.
+Similarly, a right $G$-set is defined by a map $phi: S times G arrow S$ that satisfies $phi(phi(s, g), h) = phi(s, g dot h)$ and $phi(s, e) = s$ for all $g, h in G$ and $s in S$, then $phi$ is called a right action.
+
 == Fields
 
 A field is a non-empty set $F$ equipped with two binary operations, addition and multiplication, that satisfies the following properties:
@@ -124,3 +128,26 @@ A *presheaf* on a category $scr(A)$ is a contravariant functor from $scr(A)^("op
 Faithful and full functors: A functor $F: scr(A) arrow scr(B)$ is faithful if it is injective on morphisms, and full if it is surjective on morphisms.
 
 == Natural transformations
+
+When functors have the same domain and codomain, mapping between them is called a natural transformation.
+
+#align(center, image("figs/natural_transform.png", width: 100%))
+
+the following notation is used to indicate a natural transformation $alpha: F arrow G$:
+
+#align(center, image("figs/natural_transform_2.png", width: 30%))
+
+The concept of *natural isomorphism* is defined as follows:
+
+#align(center, image("figs/natural_isomorphism.png", width: 100%))
+
+If such a natural isomorphism exists, we say that $F$ and $G$ are *naturally isomorphic*.
+
+*Equivalence of categories*
+
+Two categories $scr(A)$ and $scr(B)$ are isomorphic if there exists a pair of functors $F: scr(A) arrow scr(B)$ and $G: scr(B) arrow scr(A)$ such that $F circle.small G = 1_{scr(B)}$ and $G circle.small F = 1_{scr(A)}$.
+
+#align(center, image("figs/equivalence_of_categories.png", width: 100%))
+
+
+A functor is an *equivalence* if it is full, faithful and essentially surjective.
