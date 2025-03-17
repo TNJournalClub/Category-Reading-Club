@@ -57,6 +57,8 @@ $G$-sets: a $G$-set is a set $S$ equipped with an action of a group $G$.
 $S$ is called a left $G$-set if there exists a map $phi: G times S arrow S$ that satisfies $phi(g, phi(h, s)) = phi(g dot h, s)$ and $phi(e, s) = s$ for all $g, h in G$ and $s in S$, then $phi$ is called a left action.
 Similarly, a right $G$-set is defined by a map $phi: S times G arrow S$ that satisfies $phi(phi(s, g), h) = phi(s, g dot h)$ and $phi(s, e) = s$ for all $g, h in G$ and $s in S$, then $phi$ is called a right action.
 
+A *quotient group* or factor group is a mathematical group obtained by aggregating similar elements of a larger group using an equivalence relation that preserves some of the group structure (the rest of the structure is "factored out"). For example, the cyclic group of addition modulo $n$ can be obtained from the group of integers under addition by identifying elements that differ by a multiple of $n$ and defining a group structure that operates on each such class (known as a congruence class) as a single entity.
+
 == Fields
 
 A field is a non-empty set $F$ equipped with two binary operations, addition and multiplication, that satisfies the following properties:
@@ -123,6 +125,8 @@ Free functors: a dual of forgetful functors, it adds structure to the objects.
 Contravariant functor: Let $scr(A)$ and $scr(B)$ be categories. A contravariant functor $F: scr(A)^("op") arrow scr(B)$.
 An ordinary functor is also called a covariant functor.
 
+An example: Map from a vector space of row vectors to scalars is a column vector.
+
 A *presheaf* on a category $scr(A)$ is a contravariant functor from $scr(A)^("op") arrow$ *Set*.
 
 Faithful and full functors: A functor $F: scr(A) arrow scr(B)$ is faithful if it is injective on morphisms, and full if it is surjective on morphisms.
@@ -151,3 +155,77 @@ Two categories $scr(A)$ and $scr(B)$ are isomorphic if there exists a pair of fu
 
 
 A functor is an *equivalence* if it is full, faithful and essentially surjective.
+
+= Chapter 2: Adjoints
+
+== Definition of adjoint functors
+
+#align(center, image("figs/adjoint_definition.png", width: 100%))
+
+#align(center, image("figs/adjoint_definition_2.png", width: 100%))
+
+Question: why there is a direction? Shouldn't $F$ and $G$ be symmetric? Because the direction of the functors?
+
+In general, a forgetful functor does not usually has a right adjoint. 
+An exception is the functors from groups to monoids.
+
+#align(center, image("figs/adjoint_functor_group_monoid.png", width: 20%))
+
+An algebraic theory consists of two things: first, a collection of operations, each with a specified arity (number of inputs), and second, a collection of equations.
+In a nutshell, the main property of algebras for an algebraic theory is that the operations are defined everywhere on the set, and the equations hold everywhere too.
+
+#align(center, image("figs/algebraic_theory.png", width: 100%))
+
+Indiscrete topology: only contains the empty set and the whole space, very trivial.
+
+#align(center, image("figs/initial_terminal.png", width: 100%))
+
+== Adjunctions via units and counits
+
+Units and counits are natural transformations that are related to each other by an adjunction.
+
+#align(center, image("figs/units_counits.png", width: 100%))
+
+About example 2.2.1: #link("https://math.stackexchange.com/questions/3357852/whats-the-difference-between-a-linear-sum-and-its-value")
+
+The main idea should be that a formal linear map is a set?
+
+#align(center, image("figs/adjunction_commute.png", width: 100%))
+
+
+Let $scr(A)$ and $scr(B)$ be an adjunction $F tack.l G$, which means with units and counits,
+$
+  dash(g) = G(g) circle.small eta_A, " " dash(f) = epsilon_B circle.small F(f)
+$
+
+#align(center, image("figs/correspondence_adj_unit_counit.png", width: 100%))
+
+A great way to represent the triangle identities is to use the following diagram:
+
+#align(center, image("figs/triangle_identities_diagram.png", width: 100%))
+
+The comma category:
+
+#align(center, image("figs/comma_category.png", width: 100%))
+
+#align(center, image("figs/comma_category_2.png", width: 100%))
+
+Connection between comma categories and adjunctions:
+
+#align(center, image("figs/comma_category_adjunction.png", width: 100%))
+
+
+As a result, the adjoints can be characterized by the initial objects in the comma categories.
+
+#align(center, image("figs/initial_object_comma_category.png", width: 100%))
+
+An application of this characterization is the following:
+
+#align(center, image("figs/initial_object_comma_category_2.png", width: 100%))
+
+
+
+
+
+
+
