@@ -223,9 +223,21 @@ An application of this characterization is the following:
 
 #align(center, image("figs/initial_object_comma_category_2.png", width: 100%))
 
+= Chapter 3: Representables
 
+This chapter explores the theme of how each object sees and is seen by the category in which it lives. We are naturally led to the notion of representable functor, which (after adjunctions) provides our second approach to the idea of universal property.
 
+== Definitions and examples
 
+A representable functor can be fully characterized by~$scr(A)(A, -)$.
 
+#align(center, image("figs/representable_functor.png", width: 100%))
 
+#align(center, image("figs/representation.png", width: 100%))
+
+Not all functors into *Set* are representable, but forgetful functors (more generally, functors with left adjoints) are.
+
+#align(center, image("figs/left_adjoint.png", width: 100%))
+
+#align(center, image("figs/opposite_map.png", width: 100%))
 
