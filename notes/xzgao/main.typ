@@ -227,11 +227,16 @@ An application of this characterization is the following:
 
 This chapter explores the theme of how each object sees and is seen by the category in which it lives. We are naturally led to the notion of representable functor, which (after adjunctions) provides our second approach to the idea of universal property.
 
+Some related link: 
+- #link("https://www.youtube.com/watch?v=hnc_RB1uZVo&ab_channel=RichardSouthwell")[Category Theory For Beginners: Representable Functors]
+
 == Definitions and examples
 
 A representable functor can be fully characterized by~$scr(A)(A, -)$.
 
 #align(center, image("figs/representable_functor.png", width: 100%))
+
+#align(center, image("figs/representable_functor_image.png", width: 50%))
 
 #align(center, image("figs/representation.png", width: 100%))
 
@@ -240,4 +245,24 @@ Not all functors into *Set* are representable, but forgetful functors (more gene
 #align(center, image("figs/left_adjoint.png", width: 100%))
 
 #align(center, image("figs/opposite_map.png", width: 100%))
+
+#align(center, image("figs/opposite_map_2.png", width: 100%))
+
+#align(center, image("figs/dual_representable.png", width: 100%))
+
+#align(center, image("figs/yoneda_embedding.png", width: 100%))
+
+One more definition: (I don't understand this)
+
+#align(center, image("figs/A_Aop.png", width: 100%))
+
+Generalized elements:
+
+#align(center, image("figs/generalized_elements.png", width: 100%))
+
+== The Yoneda lemma
+
+Video: #link("https://www.youtube.com/watch?v=h64yZs8ThtQ&ab_channel=RichardSouthwell")[Category Theory For Beginners: Yoneda Lemma]
+
+#align(center, image("figs/yoneda_lemma.png", width: 100%))
 
