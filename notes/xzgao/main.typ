@@ -266,3 +266,55 @@ Video: #link("https://www.youtube.com/watch?v=h64yZs8ThtQ&ab_channel=RichardSout
 
 #align(center, image("figs/yoneda_lemma.png", width: 100%))
 
+= Chapter 5: Limits
+
+Limits are about what goes on inside a category.
+Whenever you meet a method for taking some objects and maps in a category and constructing a new object out of them, there is a good chance that you are looking at either a limit or a colimit.
+
+== Definitions and examples
+
+Here are three types of limits: product, equalizer and pullback.
+
+=== Product
+
+#align(center, image("figs/product_projection.png", width: 100%))
+
+Here the point is existence of $P$.
+
+An example:
+
+#align(center, image("figs/product_example.png", width: 100%))
+
+
+A generalized version of product:
+
+#align(center, image("figs/product_projection_2.png", width: 100%))
+
+=== Equalizers
+
+#align(center, image("figs/equalizer.png", width: 100%))
+
+=== Pullbacks
+
+#align(center, image("figs/pullback.png", width: 100%))
+
+=== Definition of limit
+
+#align(center, image("figs/shape_definition.png", width: 100%))
+
+#align(center, image("figs/limit_definition.png", width: 100%))
+
+=== Monics
+
+#align(center, image("figs/monic.png", width: 100%))
+
+#align(center, image("figs/pullback_monic.png", width: 100%))
+
+The dual concepts of product, equalizer and pullback are coproduct, coequalizer and pushout.
+Dual concept of monic is epic.
+
+== Interactions between functors and limits
+
+#align(center, image("figs/functor_limit.png", width: 100%))
+
+#align(center, image("figs/functor_limit_2.png", width: 100%))
